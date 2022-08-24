@@ -38,7 +38,9 @@ SOONG_CONFIG_hentaiGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFAC
 
 SOONG_CONFIG_NAMESPACES += hentaiQcomVars
 SOONG_CONFIG_hentaiQcomVars += \
-    supports_extended_compress_format
+    supports_extended_compress_format \
+    qcom_display_headers_namespace
 
 # Soong value variables
 SOONG_CONFIG_hentaiQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
+SOONG_CONFIG_hentaiQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
